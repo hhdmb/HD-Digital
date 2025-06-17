@@ -19,7 +19,8 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: 70px;
   padding: 0 2rem;
   background: rgba(10, 25, 47, 0.9);
@@ -30,11 +31,7 @@ body {
   z-index: 1001;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #00C9FF;
-}
+/* === LOGO === */
 .logo {
   display: flex;
   align-items: center;
@@ -42,7 +39,6 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 .logo-img {
   height: 45px;
   width: auto;
@@ -50,31 +46,26 @@ body {
   transition: transform 0.5s ease, filter 0.4s ease;
   filter: drop-shadow(0 0 5px rgba(0, 201, 255, 0.3));
 }
-
-.logo-text {
+.logo:hover .logo-img {
+  transform: rotate(8deg) scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(0, 201, 255, 0.6));
+}
+.logo span {
   font-size: 1.8rem;
   font-weight: 700;
   color: #00C9FF;
   letter-spacing: 1px;
   transition: color 0.3s ease;
 }
-.logo:hover .logo-img {
-  transform: rotate(8deg) scale(1.05);
-  filter: drop-shadow(0 0 10px rgba(0, 201, 255, 0.6));
-}
-
-.logo:hover .logo-text {
+.logo:hover span {
   color: #ffffff;
 }
 
-
-
-/* === NAVIGATION HORIZONTALE (PC) === */
+/* === NAVIGATION PC === */
 .desktop-nav {
   display: flex;
   gap: 2rem;
 }
-
 .desktop-nav a {
   color: white;
   text-decoration: none;
@@ -82,7 +73,6 @@ body {
   position: relative;
   transition: color 0.3s ease;
 }
-
 .desktop-nav a::after {
   content: "";
   position: absolute;
@@ -93,13 +83,15 @@ body {
   background: #00C9FF;
   transition: width 0.3s ease;
 }
-
 .desktop-nav a:hover {
   color: #00C9FF;
 }
-
-.desktop-nav a:hover::after {
+.desktop-nav a:hover::after,
+.desktop-nav a.active::after {
   width: 100%;
+}
+.desktop-nav a.active {
+  color: #00C9FF;
 }
 
 /* === HAMBURGER === */
@@ -111,7 +103,6 @@ body {
   cursor: pointer;
   z-index: 1002;
 }
-
 .hamburger span {
   width: 26px;
   height: 3px;
@@ -119,7 +110,6 @@ body {
   border-radius: 3px;
   transition: all 0.3s ease;
 }
-
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -129,31 +119,25 @@ body {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
-.desktop-nav a.active::after {
-  width: 100%;
-}
 
-.desktop-nav a.active {
-  color: #00C9FF;
-}
-
-/* === MENU LATÉRAL (Mobile) === */
+/* === MENU LATÉRAL MOBILE === */
 .side-menu {
   position: fixed;
   top: 0;
-  right: -250px;
-  width: 250px;
+  right: -100vw;
+  width: 80vw;
+  max-width: 280px;
   height: 100vh;
   background: rgba(15, 30, 50, 0.98);
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
-  padding: 100px 30px;
+  padding-top: 90px;
+  padding-left: 30px;
   gap: 30px;
   transition: right 0.4s ease;
-  z-index: 1001;
+  z-index: 1000;
 }
-
 .side-menu a {
   color: white;
   text-decoration: none;
@@ -161,33 +145,14 @@ body {
   font-weight: 500;
   transition: all 0.2s ease;
 }
-
 .side-menu a:hover {
   color: #00C9FF;
 }
-
 .side-menu.open {
   right: 0;
 }
 
-/* === OVERLAY FLOU === */
-.overlay {
-  position: fixed;
-  inset: 0;
-  backdrop-filter: blur(5px);
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s;
-  z-index: 1000;
-}
-
-.overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-/* === RESPONSIVE DESIGN === */
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .desktop-nav {
     display: none;
@@ -195,8 +160,21 @@ body {
 
   .hamburger {
     display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo-img {
+    height: 36px;
+  }
+
+  .logo span {
+    font-size: 1.4rem;
   }
 }
+
 .hero-carousel {
   position: relative;
   width: 100%;
