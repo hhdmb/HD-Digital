@@ -18,17 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-/* === RESET GLOBAL POUR ÉVITER LES DÉBORDEMENTS === */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 /* === NAVBAR === */
 .navbar {
   position: fixed;
@@ -153,7 +142,7 @@ html, body {
   padding-left: 30px;
   gap: 30px;
   transition: right 0.4s ease;
-  z-index: 1000;
+  z-index: 1002; /* <-- corrigé ici */
   box-sizing: border-box;
 }
 .side-menu a {
@@ -192,8 +181,6 @@ html, body {
     font-size: 1.4rem;
   }
 }
-
-
 .hero-carousel {
   position: relative;
   width: 100%;
