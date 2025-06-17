@@ -17,6 +17,7 @@ hamburger.addEventListener('click', () => {
 overlay.addEventListener('click', closeMenu);
 
 
+
    const slides = document.querySelectorAll('.carousel-slide');
     const dots = document.querySelectorAll('.carousel-dot');
     let index = 0;
