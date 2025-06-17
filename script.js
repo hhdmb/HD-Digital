@@ -16,6 +16,12 @@ hamburger.addEventListener('click', () => {
 
 overlay.addEventListener('click', closeMenu);
 
+// Fermer le menu mobile quand on clique sur un lien
+document.querySelectorAll('#sideMenu a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+
 
 
    const slides = document.querySelectorAll('.carousel-slide');
