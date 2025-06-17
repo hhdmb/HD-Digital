@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="logo hd.png"/>
+  <title>HD Digital</title>
+  <script defer src="script.js"></script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<script  src="decompte.js"></script>
+
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+<header class="navbar">
+<a href="index.html"><div class="logo" translate="no">
+  <img src="logo hd.png" alt="Logo HD Digital" class="logo-img">
+  <span>HD Digital</span>
+</div></a>
+
+
+  <nav class="nav-links desktop-nav">
+    <a href="#hero">Accueil</a>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+   
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="side-menu" id="sideMenu">
+    <a href="#hero">Accueil</a>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+    <section class="hero-carousel">
+    <div class="carousel-slide active">
+      <img src="info.jpeg" alt="Projet HD Digital" />
+      <div class="hero-content">
+        <h1>Réalisez vos projets informatiques avec HD Digital</h1>
+        <p>Conception, développement, déploiement : nous transformons vos idées en solutions concrètes.</p>
+        <a href="#contact" class="hero-btn">Discutons de votre projet</a>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="ui.jpeg" alt="Design UI/UX" />
+      <div class="hero-content">
+        <h1>Excellence en UI/UX, Web et Mobile</h1>
+        <p>Des interfaces esthétiques, intuitives et centrées utilisateur pour vos apps web et mobiles.</p>
+        <a href="#contact" class="hero-btn">Discutons de votre projet</a>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="ecom.jpeg" alt="Polyvalence" />
+      <div class="hero-content">
+        <h1>Une équipe polyvalente dans tous les domaines IT</h1>
+        <p>Que ce soit du e-commerce, des plateformes, du cloud, ou des APIs : nous maîtrisons votre terrain.</p>
+        <a href="#contact" class="hero-btn">Discutons de votre projet</a>
+      </div>
+    </div>
+
+    <div class="carousel-nav">
+      <button class="carousel-dot active"></button>
+      <button class="carousel-dot"></button>
+      <button class="carousel-dot"></button>
+    </div>
+  </section>
+
+  <section class="stats-section">
+  <div class="container">
+    <h2 class="stats-title">Nos chiffres clés</h2>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-number" data-target="20">0</div>
+        <div class="stat-label">Projets réalisés</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-number" data-target="20">0</div>
+        <div class="stat-label">Clients satisfaits</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Mois d’existence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="about" class="about-section">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>À propos de HD Digital</h2>
+      <p>Nous sommes une équipe passionnée spécialisée dans la création d’expériences digitales modernes, esthétiques et performantes.</p>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-tools"></i>
+          <h3>Efficacité</h3>
+          <p>Des projets livrés avec soin, qualité et précision.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-tags"></i>
+          <h3>Prix justes</h3>
+          <p>Des tarifs compétitifs pour un rendu haut de gamme.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-headset"></i>
+          <h3>Audit & support</h3>
+          <p>Un accompagnement client réactif et personnalisé.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-logo">
+      <img src="logo hd.png" alt="Logo HD Digital">
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services-section">
+  <div class="services-container">
+    <h2 class="section-title">Nos Services</h2>
+    <p class="section-subtitle">Nous transformons vos idées en solutions digitales sur mesure</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Développement Web</h3>
+        <p>Sites vitrines, plateformes sur-mesure, applications web performantes et sécurisées.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Développement Mobile</h3>
+        <p>Applications Android et iOS élégantes, rapides et optimisées pour vos besoins.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>Design UI/UX</h3>
+        <p>Expériences utilisateurs immersives et interfaces intuitives, modernes et attractives.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-shopping-cart"></i>
+        <h3>Solutions E-commerce</h3>
+        <p>Boutiques en ligne puissantes avec système de paiement, gestion de stock, et plus.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-database"></i>
+        <h3>Base de données</h3>
+        <p>Conception, optimisation et sécurisation de vos bases de données.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-network-wired"></i>
+        <h3>APIs & Intégrations</h3>
+        <p>Création d’APIs robustes, intégration de services tiers, architecture orientée service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials-section" id="testimonials">
+  <h2 class="section-title">Ils nous font confiance</h2>
+  <div class="testimonials-wrapper">
+    <div class="testimonial">
+      <div class="testimonial-img">
+        <img src="janis.jpg" alt="Gnahe Yves">
+      </div>
+      <div class="testimonial-content">
+        <h3>Gnahe Yves</h3>
+        <p class="position">Directeur Général, <a href="https://www.arat-ci.art/" target="_blank"  style="color:  #00C9FF;">ARAT-CI</a></p>
+        <p class="message">
+        " Grâce à HD Digital, ARAT-CI a franchi un nouveau cap en matière de présence digitale. Leur accompagnement a permis de valoriser notre savoir-faire et de renforcer notre image professionnelle à travers un site moderne, authentique et fidèle à notre identité. Je recommande vivement leurs services à toute entreprise souhaitant se démarquer. "
+        </p>
+        <div class="social-icons">
+          <a href="mailto:"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tu pourras dupliquer cette box pour d'autres témoignages -->
+  </div>
+</section>
+
+
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    
+    <!-- Infos Contact -->
+    <div class="contact-info" data-aos="fade-right">
+      <h2>Contactez-nous</h2>
+      <div class="info-item">
+      <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/2250151032396" target="_blank">+225 01 51 03 23 96</a>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:hd.digital.web@gmail.com">hd.digital.web@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Formulaire -->
+    <form class="contact-form" action="https://formspree.io/f/xrbklggn" method="POST" data-aos="fade-left">
+      <h3>Envoyez-nous un message</h3>
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">
+        Envoyer <span class="send-icon">📨</span>
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Nos services</h3>
+      <ul>
+        <li><a href="#services">Développement Web</a></li>
+        <li><a href="#services">Développement Mobile</a></li>
+        <li><a href="#services">UI/UX Design</a></li>
+        <li><a href="#services">Solutions e-commerce</a></li>
+        <li><a href="#services">Base de données & API</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column logo-column">
+      <img src="logo hd.png" alt="Logo HD Digital" class="footer-logo" />
+      <p>&copy; 2025 <strong>HD Digital</strong><br> Tous droits réservés.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+       Réalisé  par  Hassan Doumbia
+      <a href="" target="_blank">
+     mon porfolio
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+
+
+</main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000 });</script>
+<button id="scrollToTopBtn" title="Remonter en haut">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/arrow.js"></script>
+</body>
+</html>
