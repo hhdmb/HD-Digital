@@ -184,6 +184,16 @@ body {
     display: flex;
   }
 }
+
+.desktop-nav a.active::after {
+  width: 100%;
+}
+
+.desktop-nav a.active {
+  color: #00C9FF;
+}
+
+
 .hero-carousel {
   position: relative;
   width: 100%;
